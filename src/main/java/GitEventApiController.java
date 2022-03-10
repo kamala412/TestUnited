@@ -1,11 +1,9 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.io.IOUtils;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONObject;
 import pojos.Event;
 
 
@@ -15,8 +13,8 @@ import java.util.*;
 public class GitEventApiController {
 
     public static void main(String[] args) {
-        //fetchAndPrintGitHubEvents();
-        //countryCityMap();
+        fetchAndPrintGitHubEvents();
+        countryCityMap();
     }
 
     private static void countryCityMap() {
